@@ -15,4 +15,4 @@ const HeroSchema = new mongoose.Schema({
 })
 
 //? If model is already created it will take that otherwise it will create a new model
-module.exports = mongoose.model.Hero || mongoose.model('Hero', HeroSchema)
+module.exports = mongoose.models.Hero || mongoose.model('Hero', HeroSchema)
